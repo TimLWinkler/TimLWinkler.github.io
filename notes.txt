@@ -1,0 +1,48 @@
+Werkvital (black color: #000010 ; green color: #97d700)
+
+- Colorscheme:
+    black: #000010 ; green: #97d700 ; {Apple green: #79ad00 / _Avocado_: #5E8600 / _fern_green_: #6E7857 / Ebony: #535A43 / (grey:#8a817c)?  }
+
+- Features: (Überpunkte: top to bottom)
+
+    - Menubar (sticky, left to right, highlighted what side you are on right now)
+        - small logo / plain logo_text?
+        - Dropdown Menu for mobil device
+            -> Startseite, Team, Kontakt, (Standort?)
+
+    - Field (bottom of side)
+        - short infos
+        - impressum usw
+
+    - Main side:
+        - (hidden) "Alert" (text or image) if there are some needed information for the costumers
+        - short text about praxis
+        - maybe image of the team
+
+    - Team:
+        - Image and text of every employee (maybe qualifications?)
+
+    - Kontakt:
+        - Offnungszeiten
+        - Kontak (Tel + Fax)
+        - Email (maybe direct email messanger)
+
+    - Standort:
+        - Street usw.
+        - Anbindung -> Ubahn / Bus
+        - Maps
+
+Separate Räume (1Stock mit Aufzug)
+Kommunikation mit Ärzten für optimale Behandlung
+Deutsch, Englisch, Polnisch, Russisch
+
+Koordinaten: 52.489139181610554, 13.323167198794641
+<iframe src=
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.13215461211!2d13.323797480820968!3d52.488896559688676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a850f493d0ad23%3A0x354d627de5c7f943!2sWerkVital%20Praxis%20f%C3%BCr%20Physiotherapie!5e0!3m2!1sde!2sde!4v1657796676548!5m2!1sde!2sde"
+    width="100%"
+    height="400"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>

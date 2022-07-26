@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta http-equiv="Content-Type" charset="text/html; charset=UTF-8">
+    <title>WerkVital</title>
+    <link href="./werkVital_files/werkVital.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+</head>
+<body>
+<div class="wrapper" id="outerWrapper">
+
+<!-- the header / navbar of the site -->
+    <div class="header" id="head">
+        <div class="navbar" id="navbar">
+            <ul class="navbar">
+                <img id="navLogo" src="./werkVital_files/werkVital_logo.png" style="max-width: 12rem" onclick="clickLogo()">
+                <li><a href="./werkVital_files/werkVitalStandort.html">Standort</a></li>
+                <li><a href="./werkVital_files/werkVitalKontakt.html">Kontakt</a></li>
+                <li><a href="./werkVital_files/werkVitalTeam.html">Team</a></li>
+                <li><a class="active" href="./werkVital.html">Home</a></li>
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li><a class="active" href="./werkVital.html">Home</a></li>
+                        <li><a href="./werkVital_files/werkVitalTeam.html">Team</a></li>
+                        <li><a href="./werkVital_files/werkVitalKontakt.html">Kontakt</a></li>
+                        <li><a href="./werkVital_files/werkVitalStandort.html">Standort</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <div class="separator" id="separator"></div>
+
+    </div>
+    <div id="separator_content" align="center">
+        <img src="./../werkVital_welcomeImg.jpg" id="imgSeparator" style="width: 100%;height: 60%">
+        <p class="welcomer" id="welcomeText">
+            Wir hei&szlig;en Sie <br><strong style="font-size: 1.8em;">Herzlich Willkommen</strong>
+
+        </p>
+        <div class="separator_content" id="alertContainer">
+            <img id="welcomeAlert" src="./../werkVitalAlert.png" id="welcomeAlert" style="width: 70%">
+        </div>
+        <div class="separator" id="separatorImg"></div>
+    </div>
+
+
+<!-- the real body / main content of the site -->
+    <div class="wrapper" id="innerWrapper">
+        <div class="content" id="content" align="center">
+             <div class="content" id="content_box1" style="margin-top: 1em">
+                <p>
+                    <em><strong>Werk</strong><strong style="color: #97d700">Vital</strong></em>
+                    - Physiotherapie Praxis in Berlin <br> Unser Ziel ist es Ihnen zuverl&aumlssig zur Seite zu stehen und
+                    eine qualifizierte und individuelle Behandlung zu gew&aumlhrleisten.
+                    <br>
+                    Ihr Wohlbefinden ist stets eine Priorit&aumlt f&uumlr uns.
+                    <br><br>
+                    Durch unser speziell weitergebildetes <a href="./werkVital_files/werkVitalTeam.html">Team</a> sind Sie
+                    bei uns in vielf&aumlltigen Therapiebereichen in besten H&aumlnden. <br>
+                    Wir unterst&uumltzen Sie gerne auf dem Weg der Besserung in den folgenden Bereichen:<br>
+                </p>
+                <ul class="content" id="leistungList" style="display: inline-block; text-align-last: left; line-height: 1.3; padding-top: 0.5em">
+                    <li>Krankengymnastik</li>
+                    <li>Manuelle Therapie</li>
+                    <li>PNF-Therapie</li>
+                    <li>Manuelle Lymphdrainage</li>
+                    <li>Massage</li>
+                    <li>Kinesiotape</li>
+                    <li>CMD Behandlung (Kiefer)</li>
+                    <li>W&aumlrme- / K&aumlltetherapie</li>
+                    <li>Elektro- / Ultraschalltherapie</li>
+                    <li>Colonmassage</li>
+                    <li>Hausbesuche</li>
+                </ul>
+
+                <p>
+                    <br>
+                    Sehr gerne beraten wir Sie bei gesundheitlichen sowie allgemeinen Fragen in Bezug
+                    auf eine Terminvereinbarung,
+                    z&oumlgern Sie nicht uns zu <a href="./werkVital_files/werkVitalKontakt.html">kontaktieren</a>.
+                    <br><br>
+                    Es werden bei uns alle Kassen, Berufsgenossenschaften sowie Privat abgerechnet.
+                    </p>
+            </div>
+            <div class="content" id="content_box2" style="margin-top: 1em; text-align: left">
+                <img src="./../werkVital_PraxisBild.jpg" style="width: 50%">
+            </div>
+        </div>
+    </div>
+
+<!-- the footer of the site -->
+    <div class="wrapper" id="footWrapper" align="center" style="color: white">
+        <div class="wrapper" id="footerAddress">
+            <p>
+                <em><strong>Werk</strong><strong style="color: #97d700">Vital</strong></em>
+                <br>
+                <strong>Physiotherapie Praxis in Berlin</strong>
+                <br><br>
+                Uhlandstr. 114<br>
+                10717 Berlin-Wilmersdorf
+                <br><br>
+                Email: contact@werkvital.de<br>
+                Telefon: (030) 863 952 00 <br>
+                Fax: (030) 863 952 40 <br>
+            </p>
+        </div>
+        <div class="wrapper" id="footerOffnungszeiten" style="text-align-last: justify">
+            <p>
+                <strong style="text-decoration: underline;">&Oumlffnungszeiten:</strong>
+                <br>
+                Montag:     09:00-19:00<br>
+                Dienstag:   09:00-19:00 <br>
+                Mittwoch:   09:00-19:00 <br>
+                Donnerstag: 09:00-19:00 <br>
+                Freitag:    09:00-19:00 <br>
+                Samstag:    Geschlossen <br>
+                Sonntag:    Geschlossen <br>
+            </p>
+        </div>
+        <div class="wrapper" style="text-align: center">
+            <p>
+                <strong>_______________________________</strong>
+                <br><br>
+                <ul class="footerList">
+                    <li><a href="./werkVital_files/werkVitalImpressum.html">Impressum</a></li>
+                    <li><a href="./werkVital_files/werkVitalDatenschutz.html">Datenschutz</a></li>
+                    <li><a href="./werkVital_files/werkVitalKontakt.html">Kontakt</a></li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<script src="werkVital_files/scripts.js"></script>
+</body>
+</html>
