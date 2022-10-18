@@ -1,10 +1,171 @@
+<!-- DONE? -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de-DE">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta http-equiv="Content-Type" charset="text/html; charset=UTF-8">
+    <title>WerkVital - Kontakt und Standort</title>
+    <link href="werkVital.css" rel="stylesheet" type="text/css">
+    <link href="werkVitalKontakt.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+</head>
+<body onload="scrollToStandort()" onscroll="scrollEvent()">
+<div class="wrapper" id="outerWrapper">
+
+    <!-- the header / navbar of the site -->
+    <div class="header" id="head">
+        <div class="navbar" id="navbar">
+            <ul class="navbar">
+                <img id="navLogo" src="./werkVital_logo.png" style="max-width: 12rem" onclick="clickLogoOther()">
+                <li><a id="Standort1" onclick="changeToStandort('./werkVitalKontakt.html')">Standort</a></li>
+                <li><a id="Kontakt1" class="active" href="./werkVitalKontakt.html">Kontakt</a></li>
+                <li><a href="./werkVitalTeam.html">Team</a></li>
+                <li><a href="./../werkVital.html">Home</a></li>
+                <div id="menuToggle">
+                    <input type="checkbox" onclick="clickCheckbox()"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu_old"> <!-- this is outdated but needs to stay, otherwise the burger gets broken :( -->
+                        <li><a href="./../werkVital.html">Home</a></li>
+                        <li><a href="./werkVitalTeam.html">Team</a></li>
+                        <li><a href="./werkVitalKontakt.html">Kontakt</a></li>
+                        <li><a onclick="changeToStandort('./werkVitalKontakt.html')">Standort</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <div class="separator" id="separator">
+            <ul id="menu">
+                <li><a href="./../werkVital.html">Home</a></li>
+                <li><a href="./werkVitalTeam.html">Team</a></li>
+                <li><a id="Kontakt2" class="active" href="./werkVitalKontakt.html">Kontakt</a></li>
+                <li><a id="Standort2" onclick="changeToStandort('./werkVitalKontakt.html')">Standort</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="separator_contentAll" align="center">
+        <img src="./Images/werkVital_welcomeImg.jpg" id="imgSeparatorAll" style="width: 100%;height: 60%">
+        <div class="separatorImg" id="separator1"></div>
+    </div>
+
+    <!-- main Content of this site -->
+    <div class="wrapper" id="innerWrapper">
+
+        <!-- Kontaktinfo -->
+        <div class="content" id="contentWrapper" align="center">
+            <h1 align="left" style="text-decoration: underline">Kontaktinformationen:___</h1>
+            <div class="content" id="content_box_K1">
+                <p>
+                    <a>Haben Sie fragen oder wollen einen Termin vereinbaren? <br>
+                        Wir k&oumlnnen Ihnen auf <a class="bold" style="font-weight: bold">Deutsch</a>,
+                        <a class="bold" style="font-weight: bold">Englisch</a>
+                        sowie <a class="bold" style="font-weight: bold">Russisch</a>
+                        und <a class="bold" style="font-weight: bold">Polnisch</a> weiterhelfen. <br>
+                        Schreiben Sie uns einfach eine E-Mail unter: <br><br></a>
+                    <a class="bold" style="font-weight: bold">E-Mail: contact@werkvital.de <br><br></a>
+                    <a>Oder rufen Sie uns an unter der Nummer: <br><br></a>
+                    <a class="bold" style="font-weight: bold">Tel: (030) 863 952 00 <br><br></a>
+                    <a>&Uumlber Fax sind wir ebenfalls erreichbar, unter der Nummer: <br><br></a>
+                    <a class="bold" style="font-weight: bold">Fax: (030) 863 952 40 <br><br></a>
+                    <a>Sie k&oumlnnen uns auch pers&oumlnlich besuchen und einen Termin vereinbaren. Wir haben<br>
+                        <a class="bold" style="font-weight: bold"> Montag bis Freitag</a>, jeweils von
+                        <a class="bold" style="font-weight: bold"> 09:00 bis 19:00</a> Uhr ge&oumlffnet.
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Standort -->
+        <div class="content" id="contentWrapperS" align="center">
+            <div class="content" id="content_box_S1">
+                <h1 id="header_Standort" align="left" style="text-decoration: underline">
+                    Standort:___
+                </h1>
+                <div class="content" id="content_box_S2">
+                    <p>
+                        <a>Sie finden unsere Praxis in der </a>
+                        <a class="bold" style="font-weight: bold">Uhlandstr. 114 </a>
+                        <a> in 10717 Berlin-Wilmersdorf.</a> <br>
+                        <a> Mit dem </a>
+                        <a class="bold" style="font-weight: bold">Fahrstuhl </a>
+                        <a>erreichen Sie unsere </a>
+                        <a class="bold" style="font-weight: bold">separaten R&aumlume </a>
+                        <a> bequem und einfach im </a>
+                        <a class="bold" style="font-weight: bold">1.Stock </a>
+                        <br><br>
+                        <a>Zur
+                            <a class="bold" style="font-weight: bold">Anreise </a>
+                            empfehlen wir Ihnen:<br>
+                            &bull; <a style="background-color: rgb(81,142,187)">U7</a> <a class="bold" style="font-weight: bold">U-Bhf Blissestra&szlige </a>(ca. 300m) <br>
+                            &bull; <a style="background-color: rgb(219,64,24)">U2</a> / <a style="background-color: rgb(0,123,91)">U3</a> <a class="bold" style="font-weight: bold">U-Bhf Hohenzollernplatz </a>(ca. 500m) <br>
+                            &bull; <a style="background-color: rgb(243,122,23)">U9</a> <a class="bold" style="font-weight: bold">U-Bhf Berliner Stra&szlige </a> oder
+                            &bull; <a class="bold" style="font-weight: bold">U-Bhf G&uumlntzelstra&szlige </a>(jeweils ca. 800m) <br>
+                            Oder mit dem Bus 249 an der Haltestelle
+                            <a class="bold" style="font-weight: bold">Fechnerstr. </a> (ca. 80m) aussteigen.
+                        </a>
+                    </p>
+
+                    <!-- Map -->
+                    <iframe src=
+                            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.13215461211!2d13.323797480820968!3d52.488896559688676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a850f493d0ad23%3A0x354d627de5c7f943!2sWerkVital%20Praxis%20f%C3%BCr%20Physiotherapie!5e0!3m2!1sde!2sde!4v1657796676548!5m2!1sde!2sde"
+                            width="98%"
+                            height="700"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="eager"
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- the footer of the site -->
+    <div class="separator" id="footerSeparatorK"></div>
+    <div class="wrapper" id="footWrapper" align="center" style="color: white">
+        <div class="wrapper" id="footerAddress">
+            <p id="footerParagraph">
+                <img src="Images/werkVital_Logo_NoBackground.png" id="footerImg" style="width: 15%; margin-left: -1%">
+                <br>
+                Uhlandstr. 114<br>
+                10717 Berlin-Wilmersdorf
+                <br><br>
+                E-Mail: contact@werkvital.de<br>
+                Telefon: (030) 863 952 00 <br>
+                Fax: (030) 863 952 40 <br>
+            </p>
+        </div>
+        <div class="wrapper" id="footerOffnungszeiten" style="text-align-last: justify">
+            <p id="footerParagraph2">
+                <strong style="text-decoration: underline;">&Oumlffnungszeiten:</strong>
+                <br>
+                Montag:     09:00-19:00 <br>
+                Dienstag:   09:00-19:00 <br>
+                Mittwoch:   09:00-19:00 <br>
+                Donnerstag: 09:00-19:00 <br>
+                Freitag:    09:00-19:00 <br>
+                Samstag:    Geschlossen <br>
+                Sonntag:    Geschlossen <br>
+            </p>
+        </div>
+        <div class="wrapper" style="text-align: center">
+            <p>
+                <strong>_______________________________</strong>
+                <br><br>
+            <ul class="footerList">
+                <li><a href="werkVitalImpressum.html">Impressum</a></li>
+                <li><a href="werkVitalDatenschutz.html">Datenschutz</a></li>
+                <li><a href="werkVitalKontakt.html">Kontakt</a></li>
+            </ul>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
 </body>
 </html>

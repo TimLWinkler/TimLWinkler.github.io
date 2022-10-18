@@ -1,7 +1,15 @@
 Werkvital (black color: #000010 ; green color: #97d700)
+<em><strong>Werk</strong><strong style="color: #97d700">Vital</strong></em>- Physiotherapie Praxis in Berlin
+
+
 
 - Colorscheme:
     black: #000010 ; green: #97d700 ; {Apple green: #79ad00 / _Avocado_: #5E8600 / _fern_green_: #6E7857 / Ebony: #535A43 / (grey:#8a817c)?  }
+    rgb:                   151,215,0                                                           110,120,87
+
+-Font:
+    Paint: Bahnschrift SemiLight 22 Fett
+    'Yu Gothic Medium', 'Titillium Web', Argesta (https://www.allfreefonts.co/downloads/argesta/)
 
 - Features: (Überpunkte: top to bottom)
 
@@ -12,7 +20,7 @@ Werkvital (black color: #000010 ; green color: #97d700)
 
     - Field (bottom of side)
         - short infos
-        - impressum usw
+        - Impressum usw
 
     - Main side:
         - (hidden) "Alert" (text or image) if there are some needed information for the costumers
@@ -36,6 +44,7 @@ Separate Räume (1Stock mit Aufzug)
 Kommunikation mit Ärzten für optimale Behandlung
 Deutsch, Englisch, Polnisch, Russisch
 
+
 Koordinaten: 52.489139181610554, 13.323167198794641
 <iframe src=
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.13215461211!2d13.323797480820968!3d52.488896559688676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a850f493d0ad23%3A0x354d627de5c7f943!2sWerkVital%20Praxis%20f%C3%BCr%20Physiotherapie!5e0!3m2!1sde!2sde!4v1657796676548!5m2!1sde!2sde"
@@ -46,3 +55,12 @@ Koordinaten: 52.489139181610554, 13.323167198794641
     loading="lazy"
     referrerpolicy="no-referrer-when-downgrade">
 </iframe>
+
+- Impressum:
+    https://www.e-recht24.de/artikel/datenschutz/209.html#:~:text=Was%20geh%C3%B6rt%20mindestens%20in%20ein,Telefon%20und%20Fax).
+    https://www.gesetze-im-internet.de/tmg/__5.html
+
+
+- Sources:
+    https://codepen.io/nilbog/pen/gONmOr
+    https://www.alt-codes.net/flags

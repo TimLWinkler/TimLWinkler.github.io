@@ -1,0 +1,38 @@
+#content_box_K1 {
+    background: rgba(110,120,87, .25);
+}
+#content_box_K1 p {
+       padding: 2.5em 0;
+}
+
+#content_box_S2 {
+    background: rgba(110,120,87, .25);
+}
+#content_box_S2 p {
+    padding: 2.5em 0;
+}
+
+#footerSeparatorK {
+    background-color: #97d700;
+    padding: 0.1em;
+    height: 0;
+    margin-top: 1em;
+    overflow: hidden;
+}
+
+#header_Standort {
+    margin-top: 5vh;
+}
+
+#innerWrapper {
+    font-size: 0.85em;
+    line-height: 1.6em;
+}
+
+.bold {
+    font-size: 1.15em;
+}
+
+@media screen and (max-width: 750px) {
+
+}

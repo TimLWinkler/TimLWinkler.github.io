@@ -1,9 +1,10 @@
+<!-- DONE? -->
 <!DOCTYPE html>
 <html lang="de-DE">
 <head>
     <meta http-equiv="Content-Type" charset="text/html; charset=UTF-8">
     <title>WerkVital</title>
-    <link href="./werkVital_files/werkVital.css" rel="stylesheet" type="text/css">
+    <link href="WerkVital_files/werkVital.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -16,59 +17,70 @@
     <div class="header" id="head">
         <div class="navbar" id="navbar">
             <ul class="navbar">
-                <img id="navLogo" src="./werkVital_files/werkVital_logo.png" style="max-width: 12rem" onclick="clickLogo()">
-                <li><a href="./werkVital_files/werkVitalStandort.html">Standort</a></li>
-                <li><a href="./werkVital_files/werkVitalKontakt.html">Kontakt</a></li>
-                <li><a href="./werkVital_files/werkVitalTeam.html">Team</a></li>
+                <img id="navLogo" src="./WerkVital_files/werkVital_logo.png" style="max-width: 12rem" onclick="clickLogo()">
+                <li><a onclick="changeToStandort('./WerkVital_files/werkVitalKontakt.html')">Standort</a></li>
+                <li><a href="WerkVital_files/werkVitalKontakt.html">Kontakt</a></li>
+                <li><a href="WerkVital_files/werkVitalTeam.html">Team</a></li>
                 <li><a class="active" href="./werkVital.html">Home</a></li>
                 <div id="menuToggle">
-                    <input type="checkbox" />
+                    <input type="checkbox" onclick="clickCheckbox()"/>
                     <span></span>
                     <span></span>
                     <span></span>
-                    <ul id="menu">
+                    <ul id="menu_old"> <!-- this is outdated but needs to stay, otherwise the burger gets broken :( -->
                         <li><a class="active" href="./werkVital.html">Home</a></li>
-                        <li><a href="./werkVital_files/werkVitalTeam.html">Team</a></li>
-                        <li><a href="./werkVital_files/werkVitalKontakt.html">Kontakt</a></li>
-                        <li><a href="./werkVital_files/werkVitalStandort.html">Standort</a></li>
+                        <li><a href="WerkVital_files/werkVitalTeam.html">Team</a></li>
+                        <li><a href="WerkVital_files/werkVitalKontakt.html">Kontakt</a></li>
+                        <li><a onclick="changeToStandort('./WerkVital_files/werkVitalKontakt.html')">Standort</a></li>
                     </ul>
                 </div>
             </ul>
         </div>
-        <div class="separator" id="separator"></div>
+        <div class="separator" id="separator">
+            <ul id="menu">
+                <li><a class="active" href="./werkVital.html">Home</a></li>
+                <li><a href="WerkVital_files/werkVitalTeam.html">Team</a></li>
+                <li><a href="WerkVital_files/werkVitalKontakt.html">Kontakt</a></li>
+                <li><a onclick="changeToStandort('./WerkVital_files/werkVitalKontakt.html')">Standort</a></li>
+            </ul>
+        </div>
 
     </div>
     <div id="separator_content" align="center">
-        <img src="./werkVital_files/Img/werkVital_welcomeImg.jpg" id="imgSeparator" style="width: 100%;height: 60%">
+        <img src="WerkVital_files/Images/werkVital_welcomeImg.jpg" id="imgSeparator" style="width: 100%;height: 60%">
         <p class="welcomer" id="welcomeText">
             Wir hei&szlig;en Sie <br><strong style="font-size: 1.8em;">Herzlich Willkommen</strong>
 
         </p>
         <div class="separator_content" id="alertContainer">
-            <img id="welcomeAlert" src="./werkVital_files/Img/werkVitalAlert.png" id="welcomeAlert" style="width: 70%; opacity: 65%">
+            <img id="welcomeAlert" src="WerkVital_files/AlertPictures/werkVitalAlert.png" id="welcomeAlert" style="width: 70%; opacity: 65%">
+            <img id="welcomeAlertVertical" src="WerkVital_files/AlertPictures/werkVitalAlertVertical.png" id="welcomeAlertVertical" style="width: 68%; opacity: 65%; display: none">
         </div>
         <div class="separatorImg" id="separator1"></div>
     </div>
 
 
 <!-- the real body / main content of the site -->
-    <div class="wrapper" id="innerWrapper">
-        <div class="content" id="content" align="center">
-             <div class="content" id="content_box1" style="margin-top: 1em">
+    <div class="wrapper" id="innerWrapper" style="margin-top: 2em;  font-size: 0.9em">
+        <h1 style="text-decoration: underline; width: 100%">&Uumlber uns:___</h1>
+        <div class="content" id="content" align="center" style="background: rgba(110,120,87, .25);">
+             <div class="content" id="content_box1" style="margin-top: -8px">
                 <p>
-                     <br> Unser Ziel ist es Ihnen zuverl&aumlssig zur Seite zu stehen und
-                    eine qualifizierte und individuelle Behandlung zu gew&aumlhrleisten.
-                    <br>
-                    Ihr Wohlbefinden ist stets eine Priorit&aumlt f&uumlr uns.
+                    <a><br>
+                        Unser Ziel ist es Ihnen zuverl&aumlssig zur Seite zu stehen und
+                        eine qualifizierte und individuelle Behandlung zu gew&aumlhrleisten.
+                        <br>
+                        Ihr Wohlbefinden ist stets eine Priorit&aumlt f&uumlr uns.
+                    </a>
                 </p>
              </div>
             <div class="content" id="content_box2" style="margin-top: 1em">
                 <p>
-                    Durch unser speziell weitergebildetes <a href="./werkVital_files/werkVitalTeam.html">Team</a> sind Sie
+                    Durch unser speziell weitergebildetes <a href="WerkVital_files/werkVitalTeam.html">Team</a> sind Sie
                     bei uns in vielf&aumlltigen Therapiebereichen in besten H&aumlnden. <br>
                     Wir unterst&uumltzen Sie gerne auf dem Weg der Besserung in den folgenden Bereichen:<br>
                 </p>
-                <ul class="content" id="leistungList" style="display: inline-block; text-align-last: left; line-height: 1.3; padding-top: 0.5em; column-count: 1">
+                <ul class="content" id="leistungList">
                     <li>Krankengymnastik</li>
                     <li>Manuelle Therapie</li>
                     <li>PNF-Therapie</li>
@@ -87,7 +99,7 @@
                     <br><br>
                     Sehr gerne beraten wir Sie bei gesundheitlichen sowie allgemeinen Fragen in Bezug
                     auf eine Terminvereinbarung,
-                    z&oumlgern Sie nicht uns zu <a href="./werkVital_files/werkVitalKontakt.html">kontaktieren</a>.
+                    z&oumlgern Sie nicht uns zu <a href="WerkVital_files/werkVitalKontakt.html">kontaktieren</a>.
                 </p>
             </div>
         </div>
@@ -95,7 +107,7 @@
     <div class="content" id="content_box3" style="margin-top: 1em; padding: 0; width: 100%">
         <div class="separatorImg" id="separator2" style="margin-bottom: 0"></div>
         <div>
-            <img src="./werkVital_files/Img/werkVital_PraxisBild_test.jpg" style="width: 100%; margin: 0">
+            <img src="WerkVital_files/Images/werkVital_PraxisBild_test.jpg" id="footerImgSeparator" style="width: 100%; margin: 0">
         </div>
         <div class="separatorImg" id="separator3" style="margin-bottom: 0; margin-top: -0.27em"></div>
     </div>
@@ -104,8 +116,8 @@
 <!-- the footer of the site -->
     <div class="wrapper" id="footWrapper" align="center" style="color: white">
         <div class="wrapper" id="footerAddress">
-            <p>
-                <img src="./werkVital_files/Img/werkVital_Logo_NoBackground.png" id="footerImg" style="width: 15%; margin-left: -1%">
+            <p id="footerParagraph">
+                <img src="WerkVital_files/Images/werkVital_Logo_NoBackground.png" id="footerImg" style="width: 15%; margin-left: -1%">
                 <br>
                 Uhlandstr. 114<br>
                 10717 Berlin-Wilmersdorf
@@ -116,10 +128,10 @@
             </p>
         </div>
         <div class="wrapper" id="footerOffnungszeiten" style="text-align-last: justify">
-            <p>
+            <p id="footerParagraph2">
                 <strong style="text-decoration: underline;">&Oumlffnungszeiten:</strong>
                 <br>
-                Montag:     09:00-19:00<br>
+                Montag:     09:00-19:00 <br>
                 Dienstag:   09:00-19:00 <br>
                 Mittwoch:   09:00-19:00 <br>
                 Donnerstag: 09:00-19:00 <br>
@@ -133,9 +145,9 @@
                 <strong>_______________________________</strong>
                 <br><br>
                 <ul class="footerList">
-                    <li><a href="./werkVital_files/werkVitalImpressum.html">Impressum</a></li>
-                    <li><a href="./werkVital_files/werkVitalDatenschutz.html">Datenschutz</a></li>
-                    <li><a href="./werkVital_files/werkVitalKontakt.html">Kontakt</a></li>
+                    <li><a href="WerkVital_files/werkVitalImpressum.html">Impressum</a></li>
+                    <li><a href="WerkVital_files/werkVitalDatenschutz.html">Datenschutz</a></li>
+                    <li><a href="WerkVital_files/werkVitalKontakt.html">Kontakt</a></li>
                 </ul>
             </p>
         </div>
@@ -143,6 +155,6 @@
 
 </div>
 
-<script src="werkVital_files/scripts.js"></script>
+<script src="WerkVital_files/scripts.js"></script>
 </body>
 </html>
